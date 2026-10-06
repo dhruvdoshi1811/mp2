@@ -1,0 +1,96 @@
+.dialog {
+  width: min(800px, 90vw);
+  background-color: #777;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-shadow:
+    0 0 2px rgb(0 0 0 / 0.9),
+    0 1px 3px rgb(0 0 0 / 0.6);
+}
+
+.dialog::backdrop {
+  backdrop-filter: blur(6px);
+  background: rgb(0 0 0 / 0.3);
+}
+
+.dialog {
+  text-align: center;
+}
+
+.dialog h2 {
+  margin: 0 0 0.25rem;
+}
+
+.dialog h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.dialog img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.dialog dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.dialog dl > div {
+  min-width: 0;
+}
+
+.dialog dt {
+  font-weight: bold;
+}
+
+.dialog dd {
+  margin: 0;
+}
+
+.dialog ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem 1rem;
+}
+
+@media (max-width: 500px) {
+  .dialog dl,
+  .dialog ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.dialog button {
+  text-shadow: none;
+}
+
+.close {
+  display: block;
+  margin-left: auto;
+}
+
+.normal { background-image: url('../assets/normal_type.jpg'); }
+.fighting { background-image: url('../assets/fighting_type.jpg'); }
+.flying { background-image: url('../assets/flying_type.jpg'); }
+.poison { background-image: url('../assets/poison_type.jpg'); }
+.ground { background-image: url('../assets/ground_type.jpg'); }
+.rock { background-image: url('../assets/rock_type.jpg'); }
+.bug { background-image: url('../assets/bug_type.jpg'); }
+.ghost { background-image: url('../assets/ghost_type.jpg'); }
+.steel { background-image: url('../assets/steel_type.jpg'); }
+.fire { background-image: url('../assets/fire_type.jpg'); }
+.water { background-image: url('../assets/water_type.jpg'); }
+.grass { background-image: url('../assets/grass_type.jpg'); }
+.electric { background-image: url('../assets/electric_type.jpg'); }
+.psychic { background-image: url('../assets/psychic_type.jpg'); }
+.ice { background-image: url('../assets/ice_type.jpg'); }
+.dragon { background-image: url('../assets/dragon_type.jpg'); }
+.dark { background-image: url('../assets/dark_type.jpg'); }
+.fairy { background-image: url('../assets/fairy_type.jpg'); }

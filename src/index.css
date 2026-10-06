@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url('./assets/fonts/PokemonSolid.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pokemon Hollow';
+  src: url('./assets/fonts/PokemonHollow.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --font-pokemon: 'Pokemon Solid', system-ui, sans-serif;
+  --font-pokemon-hollow: 'Pokemon Hollow', system-ui, sans-serif;
+
+  --logo-fill: #ffcb05;
+  --logo-outline: #2a75bb;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-pokemon);
+  font-weight: normal;
+  letter-spacing: 0.08em;
+}
